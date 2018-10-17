@@ -1,0 +1,12 @@
+{% load staticfiles %}
+<head>
+    <link rel="stylesheet" href="{%  static  '/music/deatils.css' %}">
+</head>
+<img src="{{ album.Album_logo }}">
+<h1>{{ album.Album_title }}</h1>
+<h3>{{ album.artist }}</h3>
+<ul>
+    {% for song in album.song_set.all %}
+    <li>{{ song.Song_title }}-{{ song.file_type }}</li>
+    {% endfor %}
+</ul>
