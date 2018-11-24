@@ -1,8 +1,9 @@
 #! /bin/bash
 
-a=10
-b=100
-
+echo "Enter first number"
+read a
+echo "Enter second number"
+read b
 if(($a>$b))
 then
 	echo "a is greater"
