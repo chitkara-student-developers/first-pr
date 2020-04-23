@@ -5,6 +5,7 @@ read a
 echo "Enter second number"
 read b
 if(($a>$b))
+# if[ $a -gt $b ]
 then
 	echo "a is greater"
 
